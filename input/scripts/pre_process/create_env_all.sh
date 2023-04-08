@@ -14,3 +14,6 @@ do
     hdfs dfs -copyFromLocal $i.csv /datalake/raw/$i
     beeline -u jdbc:hive2://localhost:10000 -f /input/scripts/hql/create_table_$i.hql 
 done
+
+
+
